@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="logo">Library</div>
+            <button id="addBook">New Book +</button>
+        </div>
+
+        <div class="content">
+            <div id="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Author</th>
+                            <th>Pages</th>
+                            <th>Read?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+                <dialog>
+                    <button id="closeDialog">Close</button>
+                    <form method="dialog" id="newBook">
+                        <fieldset>
+                            <legend>Add New Book</legend>
+                            <div>
+                                <label for="Name">Name</label>
+                                <input type="text" name="Name" id="Name">
+                            </div>
+
+                            <div>
+                                <label for="Author">Author</label>
+                                <input type="text" name="Author" id="Author">
+                            </div>
+
+                            <div>
+                                <label for="Pages">Pages</label>
+                                <input type="number" name="Pages" id="Pages">
+                            </div>
+
+                            <div>
+                                <label for="isRead">Read?</label>
+                                <input type="checkbox" name="isRead" id="isRead">
+                            </div>
+                        </fieldset>
+
+                        <button id="submit">Submit</button>
+                    </form>
+                </dialog>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
